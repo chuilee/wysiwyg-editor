@@ -1,0 +1,36 @@
+.wysiwyg-editor .pull-left{float:left;}
+.wysiwyg-editor .pull-right{float:right;}
+.wysiwyg-editor .btn-group .btn {text-indent:-50000px;background:#fff;border:1px solid #ddd;padding-left:13px;padding-right:11px;}
+.wysiwyg-editor .btn-group{background-color:#fff;border:1px solid red;}
+.wysiwyg-editor .btn-group .btn:hover {background:#ccc;}
+
+
+.wysiwyg-editor #editor_source {background:transparent url('../images/tag.png') left no-repeat}
+.wysiwyg-editor #editor_undo {background:transparent url('../images/arrow_undo.png') left no-repeat}
+.wysiwyg-editor #editor_redo {background:transparent url('../images/arrow_redo.png') left no-repeat}
+.wysiwyg-editor #editor_bold {background:transparent url('../images/text_bold.png') left no-repeat}
+.wysiwyg-editor #editor_italic {background:transparent url('../images/text_italic.png') left no-repeat}
+.wysiwyg-editor #editor_voorgrond {background:transparent url('../images/color_swatch.png') left no-repeat}
+.wysiwyg-editor #editor_underline {background:transparent url('../images/text_underline.png') left no-repeat}
+.wysiwyg-editor #editor_strike {background:transparent url('../images/text_strikethrough.png') left no-repeat}
+
+.wysiwyg-editor #editor_achtergrond {background:#ffcc44 url('../images/color_swatch.png') left no-repeat}
+.wysiwyg-editor #editor_link {background:transparent url('../images/link.png') left no-repeat}
+.wysiwyg-editor #editor_image {background:transparent url('../images/image.png') left no-repeat}
+.wysiwyg-editor #editor_video {background:transparent url('../images/film.png') left no-repeat}
+.wysiwyg-editor #editor_chars {background:transparent url('../images/text_letter_omega.png') left no-repeat}
+.wysiwyg-editor #editor_full {background:transparent url('../images/arrow_out.png') left no-repeat}
+.wysiwyg-editor #editor_info {background:transparent url('../images/information.png') left no-repeat}
+.wysiwyg-editor #editor_contrast {background:transparent url('../images/contrast.png') left no-repeat}
+.wysiwyg-editor #htmlbar{background:transparent url('../images/html.png') left no-repeat}
+.wysiwyg-editor #editor_ul {background:transparent url('../images/text_list_bullets.png') left no-repeat}
+.wysiwyg-editor #editor_ol {background:transparent url('../images/text_list_numbers.png') left no-repeat}
+.wysiwyg-editor #editor_hr {background:transparent url('../images/text_horizontalrule.png') left no-repeat}
+.wysiwyg-editor #editor_indent {background:transparent url('../images/text_indent.png') left no-repeat}
+.wysiwyg-editor #editor_outdent {background:transparent url('../images/text_indent_remove.png') left no-repeat}
+.wysiwyg-editor #editor_left {background:transparent url('../images/text_align_left.png') left no-repeat}
+.wysiwyg-editor #editor_right {background:transparent url('../images/text_align_right.png') left no-repeat}
+.wysiwyg-editor #editor_center {background:transparent url('../images/text_align_center.png') left no-repeat}
+.wysiwyg-editor #editor_justify {background:transparent url('../images/text_align_justify.png') left no-repeat}
+.wysiwyg-editor #editor_sub {background:transparent url('../images/text_subscript.png') left no-repeat}
+.wysiwyg-editor #editor_sup {background:transparent url('../images/text_superscript.png') left no-repeat}

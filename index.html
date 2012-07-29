@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WYSIWYG editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An open source WYSIWYG editor, fast, simple and secure. Generates valid xhtml/html5 output">
+    <meta name="google-site-verification" content="smEYoLHVaBbHrrewGWczcDOmMkCRs7p8uejNCTkqbWA" />
+    <meta name="author" content="Jan-Karel Visser">
+
+<script src="../joes/joes.js"></script>
+<!--<script src="http://www.prototypejs.org/javascripts/prototype.js"></script>-->
+<link href="//twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+   <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="//twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/wysiwyg-editor.css" rel="stylesheet">
+
+   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">WYSIWYG Editor</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="demo.html">Demo</a></li>
+              <li><a href="#contact">Download</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <h1>WYSIWYG HTML EDITOR</h1>
+<p class="lead">A compact and fully feautured open source HTML5 Editor. Kept simple.<br /><mark>Produces valid XHTML/HTML5.</mark> Works with Zepto, jQuery and Joes. Easy styleable, fast, user friendly and secure!</p>
+
+<form>
+<fieldset>
+<textarea id="testdiv">
+<h1>WYSIWYG editor</h1>
+</textarea>
+
+</fieldset></form>
+
+<p><strong>Approx <sub>&lt;</sub>16KB unminified, that's small, and still, you have all essential functionality at your fingertips.</strong> The editor works also in 'code modus' and speech input on Google's Chrome browser is available. An image- and file 'browser', Drag and drop upload. Basic accessebility. Yep, all the things you might expect from a wysiwyg editor. <mark><strong>Try it</strong></mark></p>
+
+<div class="row">
+<p class="span6">fsdfsfsdfsd</p>
+<p class="span6">fsdfsfsdfsd</p>
+</div>
+<footer><p>&copy; 2012 by <a href="//jan-karel.appspot.com/">JK</a> /  Licensed under the LGPL license. Commercial licenses available.</p></footer>
+</div>
+<script src="wysiwyg-editor.js"></script>
+<script type="text/javascript">
+ Editor('testdiv')
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33491589-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
