@@ -1,7 +1,7 @@
 .wysiwyg-editor .pull-left{float:left;}
 .wysiwyg-editor .pull-right{float:right;}
 .wysiwyg-editor .btn-group .btn {text-indent:-50000px;background:#fff;border:1px solid #ddd;padding-left:13px;padding-right:11px;}
-.wysiwyg-editor .btn-group{background-color:#fff;border:1px solid red;}
+.wysiwyg-editor .btn-group{background-color:#fff;}
 .wysiwyg-editor .btn-group .btn:hover {background:#ccc;}
 
 

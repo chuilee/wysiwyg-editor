@@ -304,7 +304,7 @@ voorgrond+='<div name="'+Wysiwyg_kleuren[i]+'" style="width:12px;height:12px;bac
 
 buttonbar='<div id="etoolb_'+this.editor_id+'" class="wysiwyg-editor" style="width:100%;border:0px solid #fff">';
 
-buttonbar+='<div class="btn-group pull-left" style="width:100%;border:1px solid green;"><span id="editor_source" title="toggle source /wysiwyg" class="btn btn-success pull-left" style="float:left">&lt;/WYSIWYG&gt;</span><span id="editor_undo" title="Undo" class="btn">Undo</span><span id="editor_redo" class="btn" title="Redo">Redo</span><span id="editor_bold" class="btn" title="Bold">B</span><em id="editor_italic" class="btn" title="Italic">i</em>'
+buttonbar+='<div class="btn-group pull-left" style="width:100%;"><span id="editor_source" title="toggle source /wysiwyg" class="btn btn-success pull-left" style="float:left">&lt;/WYSIWYG&gt;</span><span id="editor_undo" title="Undo" class="btn">Undo</span><span id="editor_redo" class="btn" title="Redo">Redo</span><span id="editor_bold" class="btn" title="Bold">B</span><em id="editor_italic" class="btn" title="Italic">i</em>'
 buttonbar+='<span id="editor_underline" class="btn" style="text-decoration:underline;" title="Underline">U</span>'
 buttonbar+='<span id="editor_strike" class="btn" style="text-decoration:line-through;" title="Strikethrough">S</span>'
 buttonbar+='<em id="editor_voorgrond" class="btn" style="color:green;" title="Font color">a</em>'
@@ -313,7 +313,7 @@ buttonbar+='<em id="editor_achtergrond" class="btn btn-warning" title="Backgroun
 
 
 buttonbar+='<span id="editor_link" class="btn" title="Insert Link">Link</span>';
-buttonbar+='<span id="editor_image" title="Insert Image" class="btn">Image</span><span id="editor_video" class="btn" title="Insert Video">Video</span><span id="htmlbar" title="HTML menu" class="btn">&lt;html&gt;</span><input class="btn" id="mic" title="Speech input" onwebkitspeechchange="spraak_invoer(\''+this.editor_id+'\',this.value)" style="margin-top:0px;width:15px;border:1px solid red" x-webkit-speech> <span  class="btn-group" style="text-align:right;right:10px;position:absolute"><span class="btn" id="editor_info" title="Info">Info</span><span class="btn" id="editor_contrast" title="Toggle editor contrast">Contrast</span><span class="btn" id="editor_full" title="Toggle editor size">F</span></span></div><br />';
+buttonbar+='<span id="editor_image" title="Insert Image" class="btn">Image</span><span id="editor_video" class="btn" title="Insert Video">Video</span><span id="htmlbar" title="HTML menu" class="btn">&lt;html&gt;</span><input class="btn" id="mic" title="Speech input" onwebkitspeechchange="spraak_invoer(\''+this.editor_id+'\',this.value)" style="margin-top:0px;width:15px;" x-webkit-speech> <span  class="btn-group" style="text-align:right;right:10px;position:absolute"><span class="btn" id="editor_info" title="Info">Info</span><span class="btn" id="editor_contrast" title="Toggle editor contrast">Contrast</span><span class="btn" id="editor_full" title="Toggle editor size">F</span></span></div><br />';
 buttonbar+='<div id="voorgrond_'+this.editor_id+'" class="dropdown-menu hide" style="position:relative;z-index:1000">'+voorgrond+'</div>';
 buttonbar+='<div id="achtergrond_'+this.editor_id+'" class="dropdown-menu hide" style="position:relative;z-index:1000">'+voorgrond+'</div>';
 
@@ -355,7 +355,7 @@ this.editor_toolbar()
 var iframe = document.createElement("iframe");
 //iframe.innerHTML=$('#'+this.editor_id).val()
 iframe.id="frame_"+this.editor_id
-iframe.style.cssText='width:99.5%;height:400px;scroll:none;overflow:none;border:1px solid green'
+iframe.style.cssText='width:99.5%;height:400px;scroll:none;overflow:none;border:0px solid green'
 
 //this.toolbar.appendChild(iframe);
 
@@ -383,6 +383,7 @@ inlijnstijl+=document.styleSheets[i].rules[y].cssText;
 }}
 
 }
+
 catch(err){}
 //console.log(document.styleSheets[0].href)
 this.editarea=  this.toolbar.appendChild(iframe);
@@ -391,7 +392,7 @@ this.editarea=  this.toolbar.appendChild(iframe);
 
 			var frameHtml = '<!DOCTYPE html>\n';
 			frameHtml += '<html><head>'+stijlen+'</head>';
-			frameHtml += '<body><style>'+inlijnstijl+'\nbody{margin:0;}</style><div id="page" style="border:0px solid #fff;width:100%;height:100%;" contenteditable="true">';
+			frameHtml += '<body><style>'+inlijnstijl+'\nbody{margin:0px;}</style><div id="page" style="border:0px solid #fff;width:100%;height:100%;" contenteditable="true">';
 			frameHtml += this.current;
 			frameHtml += '</div></body></html>';
 /*
